@@ -22,29 +22,28 @@ DeltaParams = {
 }
 
 # Fill this in with "stable position" of last DELTA_CALIBRATE (fill
-# from details in log file of DELTA_CALIBRATE run done with
-# printer.cfg corresponding to params in DeltaParams).
+# from details in log file from last DELTA_CALIBRATE run).
 Positions = [
     [20590, 20410, 20410], [22791, 22611, 18162], [19736, 24154, 19560],
     [18515, 22311, 22300], [19824, 19644, 23107], [22193, 18514, 22004],
     [23791, 19582, 19586]
 ]
 # Fill this in with "center to outer" distances minus center pillar.
-# Start with A and go counter-clockwise.
+# Start with A and go counter-clockwise. (The print must be done with
+# a printer.cfg corresponding to params in DeltaParams).
 SizeDist = [
-    74.59 - 9.29, 74.12 - 9.29,
-    74.57 - 9.34, 74.30 - 9.34,
-    74.51 - 9.35, 74.44 - 9.35,
+    74.59 - 9.29, 74.44 - 9.35, 74.57 - 9.34,
+    74.12 - 9.29, 74.51 - 9.35, 74.30 - 9.34,
 ]
-# Fill this in with "outer to outer" distances minus one pillar. Start
-# with "A to far C" and go counter-clockwise.
+# Fill this in with "outer to outer" distances minus first pillar.
+# Start with "A to far C" and go counter-clockwise.
 AngleDist = [
     74.47 - 9.30, 74.33 - 9.38,
     74.42 - 9.32, 74.31 - 9.32,
     74.40 - 9.32, 74.49 - 9.40,
 ]
 
-# Details on printed object
+# Details of printed calibration object
 MeasureAngles = [210., 270., 330., 30., 90., 150.]
 MeasureOuterRadius = 65
 MeasureRidgeRadius = 5. - .5
